@@ -1,15 +1,19 @@
-import React, {Component, useState} from "react";
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
+import { AppRoutes } from '../AppRoutes';
 import '../styles/App.css';
+import { NavBar } from './NavBar';
+const App = () => {
 
-class App extends Component {
-    render() {
+  return (
+    <BrowserRouter>
+      <div id="main">
+        <NavBar />
+        <AppRoutes />
+      </div>
+    </BrowserRouter>
 
-        return(
-            <div id="main">
-               {/* Do not remove the main div */}
-            </div>
-        )
-    }
+  )
 }
 
 
